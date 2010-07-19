@@ -18,9 +18,18 @@ body {
   width: 640px;
 }
 
-.word {
+#words span {
+  border: 1px dashed lightgray;
+  color: transparent;
   display: inline-block;
   margin: 4px;
+  padding: 4px;
+  text-transform: uppercase;
+}
+
+#words span.found {
+  border-color: transparent;
+  color: black;
 }
 
 #letters {

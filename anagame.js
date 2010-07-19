@@ -22,8 +22,22 @@ function handleInput(input) {
   }
   
   if (wordIsValid && window.event && window.event.keyCode == 13) {
+    var wordElement = getWordElement(input.value.toLowerCase());
+    if (!!wordElement) {
+      wordElement.className += ' ' + 'found';
+    }
     clearLetterClassNames();
     input.value = '';
+  }
+}
+
+
+function getWordElement(word) {
+  var wordsElement = document.getElementById('words');
+  for (var i = 0; i < wordsElement.childNodes.length; i++) {
+    if (wordsElement.childNodes[i].innerHTML == word) {
+      return wordsElement.childNodes[i];
+    }
   }
 }
 
