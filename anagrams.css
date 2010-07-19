@@ -1,4 +1,9 @@
 body {
+  background: -webkit-gradient(linear, left top, right top,
+      from(lightgray),
+        to(lightgray),
+      color-stop(0.1,ivory),
+      color-stop(0.9,white));
   font-family: sans-serif;
 }
 
@@ -7,19 +12,39 @@ body {
 }
 
 #letters {
-  border: 1px solid black;
+  background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(gray));
+  background-color: lightgray;
+  border-color: gray lightgray lightgray gray;
+  border-radius: 16px;
   display: inline-block;
   margin: auto;
-  padding: 4px;
+  padding: 24px 12px;
 }
 
-.letter {
-  border: 1px solid gray;
+#letters span {
+  background: -webkit-gradient(linear, left top, left bottom, from(ivory), to(lightgray));
+  background-color: lightgray;
+  border: 1px solid ivory;
+  border-radius: 8px;
+  color: gray;
   display: inline-block;
-  font-size: x-large;
-  margin: 4px;
+  font-size: xx-large;
+  margin: 0px 12px 0px 12px;
   text-align: center;
+  text-shadow: 1px 1px white;
   text-transform: uppercase;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
+  vertical-align: text-bottom;
+}
+
+#letters span.selected {
+  background: ivory;
+  border-color: gray lightgray transparent;
+  color: black;
+  text-shadow: 2px 2px 2px lightgray;
+}
+
+#letters span.infocus {
+  border-color: orange;
 }
