@@ -1,6 +1,3 @@
-
-
-
 function handleInput(input) {
   var wordIsValid = true; // until proven otherwise
   var lettersElement = document.getElementById('letters');
@@ -54,7 +51,13 @@ window.onload = function () {
     lettersElement.appendChild(letterElement);
   }
   
+  var wordsElement = document.getElementById('words');
   for (var i = 0; i < data.anagrams.length; i++) {
-    print(data.anagrams[i]);
+    var wordElement = document.createElement('span');
+    wordElement.innerHTML = data.anagrams[i];
+    wordElement.className = 'word';
+    wordsElement.appendChild(wordElement);
   }
+  
+  document.getElementsByTagName('input')[0].focus();
 };

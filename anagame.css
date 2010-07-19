@@ -2,13 +2,25 @@ body {
   background: -webkit-gradient(linear, left top, right top,
       from(lightgray),
         to(lightgray),
-      color-stop(0.1,ivory),
-      color-stop(0.9,white));
+      color-stop(0.15,ivory),
+      color-stop(0.85,white));
   font-family: sans-serif;
 }
 
 #game {
   text-align: center;
+}
+
+#words {
+  border: 1px solid gray;
+  display: inline-block;
+  text-align: left;
+  width: 640px;
+}
+
+.word {
+  display: inline-block;
+  margin: 4px;
 }
 
 #letters {
@@ -47,4 +59,11 @@ body {
 
 #letters span.infocus {
   border-color: orange;
+}
+
+input {
+  border-radius: 8px;
+  font-size: xx-large;
+  text-align: center;
+  text-transform: uppercase;
 }
