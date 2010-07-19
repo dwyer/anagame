@@ -36,11 +36,6 @@ function clearLetterClassNames() {
 }
 
 
-function print(string) {
-  document.body.appendChild(document.createTextNode(string + ' '));
-}
-
-
 window.onload = function () {
   var data = getData(6);
   
