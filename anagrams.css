@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+#game {
+  text-align: center;
+}
+
+#letters {
+  border: 1px solid black;
+  display: inline-block;
+  margin: auto;
+  padding: 4px;
+}
+
+.letter {
+  border: 1px solid gray;
+  display: inline-block;
+  font-size: x-large;
+  margin: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 32px;
+  height: 32px;
+}
