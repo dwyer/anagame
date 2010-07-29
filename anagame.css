@@ -1,10 +1,6 @@
 body {
-  background: -webkit-gradient(linear, left top, right top,
-      from(lightgray),
-        to(lightgray),
-      color-stop(0.15,ivory),
-      color-stop(0.85,white));
   font-family: sans-serif;
+  margin: 0px;
 }
 
 #game {
@@ -12,14 +8,14 @@ body {
 }
 
 #words {
-  border: 1px solid gray;
-  display: inline-block;
-  text-align: left;
-  width: 640px;
+  //border: 1px solid gray;
+  //display: inline-block;
+  //text-align: left;
+  //width: 640px;
 }
 
 #words span {
-  border: 1px dashed lightgray;
+  border: 1px dashed gray;
   color: transparent;
   display: inline-block;
   margin: 4px;
@@ -32,27 +28,29 @@ body {
   color: black;
 }
 
+#input {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(lightgray));
+  border-bottom: 1px solid silver;
+  text-align: center;
+}
+
 #letters {
-  background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(gray));
-  background-color: lightgray;
   border-color: gray lightgray lightgray gray;
   border-radius: 16px;
-  display: inline-block;
+  display: block;
   margin: auto;
-  padding: 24px 12px;
 }
 
 #letters span {
-  background: -webkit-gradient(linear, left top, left bottom, from(ivory), to(lightgray));
-  background-color: lightgray;
-  border: 1px solid ivory;
-  border-radius: 8px;
-  color: gray;
+  background-color: transparent;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: #444;
   display: inline-block;
   font-size: xx-large;
   margin: 0px 12px 0px 12px;
   text-align: center;
-  text-shadow: 1px 1px white;
+  text-shadow: 0px 1px white;
   text-transform: uppercase;
   width: 48px;
   height: 48px;
@@ -67,11 +65,17 @@ body {
 }
 
 #letters span.infocus {
-  border-color: orange;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(gold), color-stop(0.5, orange), to(gold));
+  text-shadow: none;
+  -webkit-transition: linear 1s background;
 }
 
 input {
-  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px white;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(gray), color-stop(0.05, silver), color-stop(0.5, ivory), to(white));
+  border: 1px solid silver;
+  border-collapse: collapse;
+  border-radius: 5px;
   font-size: xx-large;
   text-align: center;
   text-transform: uppercase;
