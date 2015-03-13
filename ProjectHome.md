@@ -1,0 +1,1 @@
+Given a group of letters, spell as many words as you can before the timer runs out. You may only use a letter as many times as it appears in the group.
